@@ -13,6 +13,12 @@ import {
   typescript,
   html,
   css,
+  Gcp,
+  Aws,
+  CD,
+  java,
+  spring,
+  K8s,
   reactjs,
   redux,
   tailwind,
@@ -33,6 +39,7 @@ import {
   realtor,
   jobit,
   tripguide,
+  easyShop,
   threejs,
 } from "../assets";
 
@@ -70,39 +77,85 @@ const services = [
   },
 ];
 
-const technologies = [
+
+const backEnd = [
   {
-    name: "HTML 5",
-    icon: html,
-  },
-  {
-    name: "CSS 3",
-    icon: css,
-  },
-  {
-    name: "JavaScript",
-    icon: javascript,
+    name: "Java",
+    icon: java,
   },
   {
     name: "C++",
     icon: cpp,
   },
   {
+    name: "Bash",
+    icon: bash,
+  },
+  {
+    name: "Spring",
+    icon: spring,
+  },
+  {
+    name: "Gcp",
+    icon: Gcp,
+  },
+  {
+    name: "Aws",
+    icon: Aws,
+  },
+];
+
+const clouds = [
+  // {
+  //   name: "Gcp",
+  //   icon: Gcp,
+  // },
+  // {
+  //   name: "Aws",
+  //   icon: Aws,
+  // },
+];
+
+const frontEnd = [
+  {
     name: "React JS",
     icon: reactjs,
   },
+  // {
+  //   name: "Redux Toolkit",
+  //   icon: redux,
+  // },
   {
-    name: "Redux Toolkit",
-    icon: redux,
-  },
-  {
-    name: "Material UI",
-    icon: mui,
+    name: "JavaScript",
+    icon: javascript,
   },
   {
     name: "Node JS",
     icon: nodejs,
   },
+  // {
+  //   name: "HTML",
+  //   icon: html,
+  // },
+  // {
+  //   name: "CSS",
+  //   icon: css,
+  // },
+];
+
+const databases = [
+  // {
+  //   name: "MongoDB",
+  //   icon: mongodb,
+  // },
+  // {
+  //   name: "MySQL",
+  //   icon: sql,
+  // },
+];
+
+
+const tools = [
   {
     name: "MongoDB",
     icon: mongodb,
@@ -112,18 +165,27 @@ const technologies = [
     icon: sql,
   },
   {
-    name: "git",
-    icon: git,
+    name: "K8s",
+    icon: K8s,
   },
   {
-    name: "Bash",
-    icon: bash,
+    name: "Docker",
+    icon: docker,
   },
   {
-    name: "FFMPEG",
-    icon: ffmpeg,
+    name: "CD",
+    icon: CD,
   },
+  // {
+  //   name: "git",
+  //   icon: git,
+  // },
+  // {
+  //   name: "FFMPEG",
+  //   icon: ffmpeg,
+  // },
 ];
+
 
 const experiences = [
   {
@@ -135,6 +197,7 @@ const experiences = [
     points: [
       "Resolved critical customer issues within a given timeframe, unblocking the customer and maintaining an 85% customer retention rate.",
       "Developed RESTful APIs in Java and SpringBoot for the Templates and later participated in the migration to FastAPI leading to 1.5x faster server response times.",
+      "Implemented the Event Bridge Webhook Trigger, replacing polling triggers with a single webhook, reducing server load by 50%, enabling real-time pipeline initiation, and resolving our valued customer Fiserv's Nexus server overload.",
       "Orchestrated Docker and Kubernetes implementation, reducing server costs by 25% through improved resource allocation strategies.",
       "Played a key role in the Pipelines team by automating 200+ backend test cases, caught 80+ high-priority bugs, cutting regression testing time by 40%, and implemented Cypress with TypeScript for UI testing.",
     ],
@@ -149,7 +212,8 @@ const experiences = [
       "Led the release sign-off process for the Pipelines team, overseeing four services and ensuring timely and efficient delivery in multiple environments.",
       "Reduced sign-off time by optimizing resource allocation strategies, fixing and enhancing test cases with dynamic approaches and efficient looping matrix utilization.",
       "Led end-to-end testing for multiple feature by creating comprehensive test plans based on technical specifications by integrating components like Expression Engine, Looping Strategies, Failure Strategies, OPA Policy, and RBAC to ensure cross-module functionality and execution.",
-      "Developed and maintained robust end-to-end automation scripts for API testing using Java and TestNG, and UI testing with Cypress and TypeScript, emphasizing CFD and critical feature validations."
+      "Developed and maintained robust end-to-end automation scripts for API testing using Java and TestNG, and UI testing with Cypress and TypeScript, emphasizing CFD and critical feature validations.",
+      "Authored comprehensive documentation and RunBooks to streamline team onboarding and enhance operational efficiency."
 ,
     ],
   },
@@ -222,9 +286,108 @@ const testimonials = [
 
 const projects = [
   {
+    name: "RealTor",
+    description:
+      "This application provides users with real-time updates and live deal rates for over 100 cities. It empowers users to search for apartments to rent or buy, view asking prices, and apply various filters based on their specific requirements. Additionally, the application allows users to conveniently locate available apartments based on their preferences.",
+    tags: [
+      {
+        name: "React-JS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "NextJS",
+        color: "green-text-gradient",
+      },
+      {
+        name: "Chakra UI",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Rapid API",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: realtor,
+    source_code_link: "https://github.com/ar7aditya/Real_Tor",
+  },
+  {
+    name: "Easy Shop",
+    description:
+      "Designed and implemented a microservices-based e-commerce platform featuring four interconnected services, ensuring efficient user management through a robust architecture that facilitated seamless data exchange across applications. Integrated an API Gateway for service routing and a Shop Frontend using Angular. Deployed the application using containerized environments and ensured monitoring with Grafana Stack",
+    tags: [
+      {
+        name: "Java",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "Spring",
+        color: "green-text-gradient",
+      },
+      {
+        name: "SQl",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Kafka",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Keycloak",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Kubernetes",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "Grafana",
+        color: "orange-text-gradient",
+      },
+    ],
+    image: easyShop,
+    source_code_link: "https://github.com/ar7aditya?tab=repositories",
+  },
+  {
+    name: "Node Bus",
+    description:
+      "Nodebus is a platform that functions as a blogging website, allowing users to register, create their own accounts, and publish their articles. One unique aspect of Nodebus is the ability for users to engage in chat conversations with other users, fostering interaction and connection within the community. Users can also actively participate in discussions and engage with the blogs published on the platform.",
+    tags: [
+      {
+        name: "Javascript",
+        color: "yellow-text-gradient",
+      },
+      {
+        name: "MongoDB",
+        color: "green-text-gradient",
+      },
+      {
+        name: "NodeJs",
+        color: "pink-text-gradient",
+      },
+      {
+        name: "Passport-JS",
+        color: "blue-text-gradient",
+      },
+      {
+        name: "EJS",
+        color: "orange-text-gradient",
+      },
+      {
+        name: "Cloudinary",
+        color: "green-text-gradient",
+      },
+    ],
+    image: nodebus,
+    source_code_link: "https://github.com/ar7aditya/node-bus",
+  },
+  {
     name: "CryptoVerse",
     description:
-      "I have built a real-time cryptocurrency application using ReactJS and RapidAPI. The application fetches live exchange rates and updates for more than 50 cryptocurrencies. It presents this data in an intuitive manner using Chart.js, allowing users to easily visualize the trends and fluctuations.And also it has a news section which fetches the latest news from RapidAPI and displays it in a card format.",
+      "The application fetches live exchange rates and updates for more than 50 cryptocurrencies. It presents this data in an intuitive manner using Chart.Js, allowing users to easily visualize the trends and fluctuations. And also it has a news section which fetches the latest news from RapidAPI and displays it in a card format.",
     tags: [
       {
         name: "React-JS",
@@ -246,64 +409,6 @@ const projects = [
     image: cryptoverse,
     source_code_link: "https://github.com/ar7aditya/Cryptoverse",
   },
-  {
-    name: "RealTor",
-    description:
-      " I have developed a dynamic real estate application using ReactJS and RapidAPI. This application provides users with real-time updates and live deal rates for over 100 cities. It empowers users to search for apartments to rent or buy, view asking prices, and apply various filters based on their specific requirements. Additionally, the application allows users to conveniently locate available apartments based on their preferences.",
-    tags: [
-      {
-        name: "React-JS",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "NextJS",
-        color: "green-text-gradient",
-      },
-      {
-        name: "Chakra UI",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Rapid API",
-        color: "orange-text-gradient",
-      },
-      {
-        name: "Filtering",
-        color: "green-text-gradient",
-      },
-    ],
-    image: realtor,
-    source_code_link: "https://github.com/ar7aditya/Real_Tor",
-  },
-  {
-    name: "Node Bus",
-    description:
-      "Nodebus is a platform that functions as a blogging website, allowing users to register, create their own accounts, and publish their articles. One unique aspect of Nodebus is the ability for users to engage in chat conversations with other users, fostering interaction and connection within the community. Users can also actively participate in discussions and engage with the blogs published on the platform.",
-    tags: [
-      {
-        name: "Javascript",
-        color: "yellow-text-gradient",
-      },
-      {
-        name: "MongoDB",
-        color: "green-text-gradient",
-      },
-      {
-        name: "css",
-        color: "pink-text-gradient",
-      },
-      {
-        name: "Passport-JS",
-        color: "blue-text-gradient",
-      },
-      {
-        name: "EJS",
-        color: "orange-text-gradient",
-      },
-    ],
-    image: nodebus,
-    source_code_link: "https://github.com/ar7aditya/node-bus",
-  },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, experiences, testimonials, projects, backEnd, frontEnd, databases, tools, clouds };

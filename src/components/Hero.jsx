@@ -22,6 +22,11 @@ const Hero = () => {
           A Software Engineer with expertise <br className='sm:block hidden' />in full stack development and<br className='sm:block hidden' /> exceptional problem-solving skills <br className='sm:block hidden' />
           </p>
         </div>
+        {/* <div class="from-teal-400 to-blue-500 hover:from-purple-500 hover:to-blue-500 ...">
+        <button type="button" class="bg-gradient-to-r from-teal-400 to-blue-500 hover:from-pink-500 hover:to-orange-500 ...">
+            Resume
+          </button>
+        </div> */}
       </div>
 
       {/* <ComputersCanvas /> */}

@@ -9,12 +9,21 @@ import github from "./github.png";
 import menu from "./menu.svg";
 import close from "./close.svg";
 
+import linkedIn from "./tech/linkedIn.png"
+import gmail from "./gmail.svg"
+
 import bash from "./tech/bash.png";
 import ffmpeg from "./tech/ffmpeg.png";
 import mui from "./tech/mui.png";
 import antD from "./tech/antD.png";
 import sql from "./tech/sql.png";
 import cpp from "./tech/c++.png";
+import java from "./tech/java.png";
+import spring from "./tech/spring.png"
+import K8s from "./tech/K8s.png"
+import Gcp from "./tech/gcp.svg"
+import Aws from "./tech/aws.svg"
+import CD from "./tech/cd.svg"
 import css from "./tech/css.png";
 import docker from "./tech/docker.png";
 import figma from "./tech/figma.png";
@@ -41,6 +50,7 @@ import nodebus from "./nodebus.png";
 import realtor from "./realtor.png";
 import carrent from "./carrent.png";
 import jobit from "./jobit.png";
+import easyShop from "./easyShop.webp";
 import tripguide from "./tripguide.png";
 
 export {
@@ -61,7 +71,13 @@ export {
   antD,
   sql,
   css,
+  java,
+  spring,
   docker,
+  K8s,
+  Gcp,
+  Aws,
+  CD,
   figma,
   git,
   html,
@@ -85,4 +101,8 @@ export {
   realtor,
   jobit,
   tripguide,
+  easyShop,
+
+  linkedIn,
+  gmail,
 };

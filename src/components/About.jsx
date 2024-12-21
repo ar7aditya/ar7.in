@@ -40,14 +40,14 @@ const About = () => {
     <>
       <motion.div variants={textVariant()}>
         <p className={styles.sectionSubText}>Introduction</p>
-        <h2 className={styles.sectionHeadText}>Overview.</h2>
+        <h2 className={styles.sectionHeadText}>Overview</h2>
       </motion.div>
 
       <motion.p
         variants={fadeIn("", "", 0.1, 1)}
         className='mt-4 text-secondary text-[17px] max-w-3xl leading-[30px]'
       >
-        Software Engineer with 1.5+ years of experience in a product-based company, specializing in delivering customer-focused solutions and effectively resolving critical issues. Proficient in designing and optimizing high-quality RESTful APIs using Java and SpringBoot, with strong command in ReactJS for front-end development. <br className='sm:block hidden' /> Passionate about solving complex coding problems, particularly in C++.
+        Software Engineer with 1.5+ years of experience in a SaaS company, specializing in delivering customer-focused solutions and effectively resolving critical issues. Proficient in designing and optimizing high-quality RESTful APIs using Java and SpringBoot, with strong command in ReactJS for front-end development. <br className='sm:block hidden' /> Passionate about solving complex coding problems, particularly in C++.
       </motion.p>
 
       <div className='mt-20 flex flex-wrap gap-10'>
